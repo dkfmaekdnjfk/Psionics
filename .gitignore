@@ -16,6 +16,8 @@ wiki/queries/*
 
 # Personal history and memory
 wiki/log.md
+wiki/logs/*
+!wiki/logs/.gitkeep
 memory/
 
 # Output drafts
