@@ -1,0 +1,34 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "If a wiki/ directory exists in the current project and any files in raw/ were added or modified during this task, silently update the wiki: process new sources into wiki pages, update relevant concept/entity pages, update index.md, and append to log.md. If no raw/ changes or no wiki/ exists, do nothing."
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/skills/karpathy-wiki/scripts/check-wiki-drift.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python3*)",
+      "Bash(bash .claude/skills/karpathy-wiki/scripts/check-wiki-drift.sh)",
+      "Bash(bash scripts/calendar_ops/run_daily_calendar_brief.sh)",
+      "Bash(node scripts/export_calendar.js)"
+    ]
+  }
+}
