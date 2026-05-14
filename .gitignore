@@ -1,0 +1,30 @@
+# Personal content — never commit
+raw/*
+!raw/.gitkeep
+
+# Personal wiki pages — keep structure, not content
+wiki/concepts/*
+wiki/entities/*
+wiki/sources/*
+wiki/summaries/*
+wiki/queries/*
+!wiki/concepts/.gitkeep
+!wiki/entities/.gitkeep
+!wiki/sources/.gitkeep
+!wiki/summaries/.gitkeep
+!wiki/queries/.gitkeep
+
+# Personal history and memory
+wiki/log.md
+memory/
+
+# Output drafts
+output/*
+!output/.gitkeep
+
+# System
+.DS_Store
+*.DS_Store
+
+# Claude local settings (keep .claude/skills/)
+.claude/settings.local.json
