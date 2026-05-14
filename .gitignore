@@ -23,6 +23,8 @@ memory/
 # Output drafts
 output/*
 !output/.gitkeep
+!output/calendar/
+output/calendar/*.json
 
 # System
 .DS_Store

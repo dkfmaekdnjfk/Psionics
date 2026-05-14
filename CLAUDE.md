@@ -13,17 +13,25 @@ Your personal knowledge base. You are the **editor** of this wiki.
 
 ## Directory Structure
 ```
-raw/         → your source documents (read-only)
+raw/                  → your source documents (read-only)
 wiki/
-  concepts/  → concept pages
-  entities/  → people · tools · papers · models
-  sources/   → one summary per raw source
-  summaries/ → cross-source synthesis (after 2+ sources)
-  queries/   → valuable query results worth keeping
-  index.md   → full table of contents (always current)
-  log.md     → operation history (append-only)
-  overview.md→ big-picture synthesis
-output/      → blog drafts, reports, slides
+  concepts/           → concept pages
+  entities/           → people · tools · papers · models
+  sources/            → one summary per raw source
+  summaries/          → cross-source synthesis (after 2+ sources)
+  queries/            → valuable query results worth keeping
+  projects/           → project roadmaps and ongoing work
+  logs/               → daily log pages (YYYY-MM-DD.md)
+  overview/           → topic-level overviews and guardrails
+  assets/images/      → images referenced in wiki pages
+  scripts/            → FSRS spaced-repetition scripts
+  index.md            → full table of contents (always current)
+  log.md              → operation history (append-only)
+  overview.md         → big-picture synthesis
+scripts/              → macOS Calendar integration scripts
+output/
+  calendar/           → exported calendar JSON (gitignored)
+  (other outputs)     → blog drafts, reports, slides
 ```
 
 ## Operation Triggers
